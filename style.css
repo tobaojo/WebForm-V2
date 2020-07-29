@@ -1,1 +1,59 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
 
+body{
+  background: #007acc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+h1{
+  text-align: center;
+}
+
+.card{
+  background-color: white;
+  height: 700px;
+  padding: 30px 40px;
+  border-radius: 4px;
+  box-shadow: 4px 4px 15px #888888
+}
+
+.form-control{
+  margin-bottom: 10px;
+  padding-top: 10px;
+
+}
+.form-contol label{
+  display: block;
+}
+
+.form-control input{
+  border: solid 1px lightgrey;
+  border-radius: 3px;
+  width: 100%;
+  padding: 10px;
+}
+
+.form-control input:focus{
+  outline: 0;
+  border-color: darkgrey;
+}
+
+.form-control.success input{
+border-color: #2ecc71;
+}
+
+.form-control.fail input{
+  border-color: #e74c3c;
+}
+
+.form-control small{
+  color: #e74c3c;
+}
