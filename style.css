@@ -15,6 +15,7 @@ body{
 
 h1{
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 .card{
@@ -27,18 +28,21 @@ h1{
 
 .form-control{
   margin-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
 
 }
 .form-contol label{
   display: block;
+  padding: 20px;
 }
 
 .form-control input{
   border: solid 1px lightgrey;
   border-radius: 3px;
-  width: 100%;
+  width: 400px;
   padding: 10px;
+  display: block;
 }
 
 .form-control input:focus{
@@ -56,4 +60,25 @@ border-color: #2ecc71;
 
 .form-control small{
   color: #e74c3c;
+  position: absolute;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.fail small{
+  visibility: visible;
+}
+
+.btn{
+  display: block;
+  width: 400px;
+  padding: 0.7rem;
+  background-color: #40bf40;
+  color: white;
+  border: solid white 1px;
+  border-radius: 4px;
+}
+.btn:hover{
+  background-color: #39ac39;
+  cursor: pointer;
 }
